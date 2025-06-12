@@ -5,6 +5,9 @@
 using namespace std;
 int main()
 {
+    int choice;
+    do
+        {
     srand(time(NULL));
     
     char randomop[]={'+' , '/' , '*' , '-'};
@@ -55,19 +58,15 @@ char op=randomop[n];
         cout<<"Oh No! Your answer is wrong. The correct answer is = "<<fixed<<setprecision(2)<<check<<endl;
     }
 
-    int choice;
+    
     cout<<"Do you want to Play Again? If yes then press 1 else press 0"<<endl;
     cin>>choice;
-    if(choice==1)
-    {
-        main();
-    }
-    else 
-    {
-        cout<<"Programmed by ~ ArnavBhure"<<endl;
-        return 0;
-    }
+    cout<<endl;
+    
+        cout<<"        Programmed by ~ ArnavBhure      "<<endl;
      
+        }
+        while(choice!=0);
  }
 
 
